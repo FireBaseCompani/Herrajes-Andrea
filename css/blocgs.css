@@ -1,0 +1,18 @@
+ #blogs .contenedor{
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+ }
+
+ #blogs article {
+margin: 15px;
+
+ }
+
+ #blogs img{
+ 	width: 100%;
+ }
+ 
+ #blogs h3,h4{
+ 	text-align: center;
+ }

@@ -1,0 +1,44 @@
+#informacion{
+	background: rgba(255, 71, 255, 0.2);
+	color: #0A0A0A;
+	padding: 20px;
+	text-align: center;
+	
+}
+.info-pet{
+	margin: 20px;
+}
+#informacion .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-weight: 500;
+}
+.info-pet .h8{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #4D27C0;
+	text-align: center;
+}
+.info-pet{
+	font-weight: 500;
+	text-align: left;
+	}
+@media(min-width: 480px){
+	.info-pet{
+		width: 40%;
+	}
+}
+@media(min-width: 1024px){
+	.info-pet{
+		width: auto;
+	}
+.info-pet .a {
+  font-size: 200%;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
