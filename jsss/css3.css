@@ -1,0 +1,138 @@
+
+.containerTarg{
+	width: 250px;
+	height: 250px;/* tarjeta principal donde contiene la imagen */
+	box-shadow: 0 4px  8px 0 rgb(0, 0, 0,0.5);
+	position: relative;
+	margin-left: 20px;
+	margin-top: 5%;
+}
+
+.containerTarg .image img{
+	width: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 250px;/* ajusta el alto de  la imagen */
+	transition: 0.5s ease-in-out;
+}
+.containerTarg:hover .image img{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.containerTarg .contents{
+	position: absolute;
+	top: 60%;/* ajusta la posicion del text */
+	width: 210px;/* ajusta el text, si es mayor que, se va a la derecha */
+	height: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 100%;
+	display: none;
+	transition: 0.5s ease-in-out;
+
+}
+
+.containerTarg:hover .contents{
+	display: block;
+}
+.containerTarg h2{
+	color: rgba(0, 0, 255, 0.8);
+}
+.media{
+	display: flex;
+	position: absolute;
+	top: 83%;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.containerTarg:hover .media{
+	opacity: 1;
+
+}
+.media li{
+	list-style: none;
+	margin: 15px 35px;
+}
+
+.containerTarg:hover .empty{
+	display: block;
+}
+
+/* y este codigo hace responsivo a la imagen */
+
+ #blogss .contenedors{
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+ 	margin-top:5px;
+ }
+ .empty{/* y este codigo es para ajustar el color y tamaño de la diagonal */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 248px;
+	height: 250px;
+	background-color: rgba(255, 99, 71, 0.2);
+	z-index: -1;
+	display: none;
+	transition: 1s ease-in-out;
+	clip-path: polygon(0 0,100% 0, 100% 33%,0 76%);
+}
+.containerTarg:hover .empty{
+	display: block;
+}
+#MensageBienvenidos{/* y este codigo es para el texto superior de las imagenes */
+	text-align: center;
+	margin-top: 4px;
+}
+
+/* --------------------------el siguiente estilo es solo para el button---------------------- */
+
+
+.containerTarg .contentss button{
+	position: absolute;
+	top: 1%;
+	width: 200px;
+	height: 25px;
+	margin: -80px;/* ajusta la posicion del botton si es menor que se va ala derecha */
+	border: 2px solid black;
+	background-color: rgba(180, 0, 136, 0.3);
+	color: black;
+	border-radius: 50px;
+}
+.containerTarg:hover .contentss{
+	display: block;
+}
+.containerTarg .contentss{
+	position: absolute;
+	top: 115%;/* ajusta la posicion del boton(arriba o abajo) */
+	width: 160px;
+	height: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	display: none;
+	transition: 0.5s ease-in-out;
+
+}
+/* -----------------------fin del codigo para estilo del button---------------------- */
+ /* -----------------------codigo para buscador---------------------- */
+#buscador{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    border:2px solid DodgerBlue; /* para el color de fondo del buscador */
+    border-radius: 10px;
+    padding: 10px;	
+}
+
+ /* -----------------------fin de codigo para buscador---------------------- */
+.row {
+	align-content: center;
+}

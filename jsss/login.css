@@ -1,0 +1,44 @@
+body {
+	background-image: url(../imagenes/ciudad.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.Miformulario{
+	background: rgba(0,0,0,.3);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 30px white;
+	color: white;
+}
+#texto{
+	color: white;
+}
+#txtPassword{
+	color: white;
+}
+.form-control{
+	background: rgba(0, 0, 0, 0.3);
+	border-style: none;
+	transition: 0.5s ease-in;
+	outline: none;
+	box-shadow: none;
+
+}
+.form-control:focus{
+	background: none;
+	box-shadow: none;
+	outline: none;
+}
+.ingresa{
+	background: #222A3F;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 700!important;
+	color: white;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0, .568);
+	transition: 0.5s ease-in;	
+}
+.ingresa{
+	color: white;
+}
