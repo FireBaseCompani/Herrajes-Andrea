@@ -1,297 +1,69 @@
-<!DOCTYPE html>
-<html lang="es">
-   <head>
-   	<title>Herrajes Andreas</title>  
-   	<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <link rel="icon" type="image/png" href="imagenes\Icon.png">
-        <link rel="stylesheet" type="text/css" href="jsss/css33.css">
-      <script src="jsss/jquery.min.js"></script> 
-   </head>
-      <body>
-           <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-          <div class="container-fluid">
-              <nav class="navbar navbar-light ">
-                  <div class="container-fluid">
-                  <a class="navbar-brand" href="Navegacion.php">
-                    <img src="imagenes/LogoEmpresa.png" alt="" width="140" height="30" class="d-inline-block align-text-top">     
-                  </a>
-                </div>
-              </nav>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-6 mb-lg-0">
-                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" class="text-primary" href="Navegacion.php">Inicio</a>
-                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link active" class="link-primary" aria-current="page" href="#">Misiòn</a>
-                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" class="link-primary" href="#">Vision</a>
-                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" class="link-primary" href="#">Contacto</a>
-                   </li>
-                </ul>
-              </div>
-          </div>
-      </nav>
-      
-       <nav class="navbar navbar-expand-lg navbar-light " >
- 
-       <form action="buscar.php" method="post" class="col-md-4 col-lg-4 col-11 mx-auto my-auto search-box">   
-            <div class="input-group form-container">
-               <div id='loader' style='display: none;'>
-                 <img src="imagenes/loader.gif" width="100">
-               </div>
-               <input type="text" name="search" class="form-control search_input" id="buscador" required="" autofocus="autofocus" placeholder="Encuentra argollas, hebillas,etc.,..">
-               <span class="input-group-btn">
-                  <button class="btn btn-search"  type="submit" name="submit" id='but_searcch' value='Search'>
-                    <img src="img/lup.jpg" width="40">
-                  </button>
-               </span> 
-            </div>
-       </form>
-    </nav>
-     <br>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/sla.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/img.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/img.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br>
-  <div class="container">      
-       <div class="shadow-none p-3 mb-5 bg-light rounded">
-       <section id="MensageBienvenidos">
-          <h2>Herrajes Andrea te ofrece productos de calidad</h2>
-          <p>Ven y conoce lo mejor de herrajes andrea</p>
-       </section>
-       
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </div>
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" href="jsss/css/all.css">
+<link rel="stylesheet" href="jsss/LoginStylsbootstrap.min.css">
+<script src="jsss/Login_jquery.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="jsss/login.css">
 
-    </div>
+    <title>Login</title>
+   <script type="text/javascript">
+function mostrarPassword(){
+    var cambio = document.getElementById("txtPassword");
+    if(cambio.type == "password"){
+      cambio.type = "text";
+      $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+    }else{
+      cambio.type = "password";
+      $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+    }
+  } 
   
-  <div class="container"> 
-                       <div class="row" >
-                         <section id="item" class="col-md-3 text-center">
-                             <section id="blogss">
-                                 <div class="contenedors">
-                                      <div class="containerTarg">
-                                          <div class="target">   
-                                                    </div>
-                                                    <div class="image">
-                                                      <img src="img/cintaAmarilla.png" class="img-fluid" >
-                                                    </div>
-                                                    <div class="contents">
-                                                       <h6>Hebilla con rodillo cr 38 mm reforzado 2 hebijones</h6>    
-                                                    </div>
-                                                      <div class="contentss">
-                                                        <a href="eliminarTambien.html">
-                                                        <button >Ver Detalles</button>
-                                                        </a> 
-                                                      </div>
-                                           <div class="empty">
-                                           </div>                   
-                                       </div>           
-                                 </div>           
-                             </section>          
-                         </section>
-                          <section id="item" class="col-md-3 text-center">
-                             <section id="blogss">
-                                 <div class="contenedors">
-                                      <div class="containerTarg">
-                                          <div class="target">   
-                                                    </div>
-                                                    <div class="image">
-                                                      <img src="img/CINTAcOLORES.png" class="img-fluid" >
-                                                    </div>
-                                                    <div class="contents">
-                                                       <h6>Hebilla con rodillo cr 38 mm reforzado 2 hebijones</h6>    
-                                                    </div>
-                                                      <div class="contentss">
-                                                        <a href="eliminarTambien.html">
-                                                        <button >Ver Detalles</button>
-                                                        </a> 
-                                                      </div>
-                                           <div class="empty">
-                                           </div>                   
-                                       </div>           
-                                 </div>           
-                             </section>          
-                         </section>
-                          <section id="item" class="col-md-3 text-center">
-                             <section id="blogss">
-                                 <div class="contenedors">
-                                      <div class="containerTarg">
-                                          <div class="target">   
-                                                    </div>
-                                                    <div class="image">
-                                                      <img src="img/CINTAcOLORES.png" class="img-fluid" >
-                                                    </div>
-                                                    <div class="contents">
-                                                       <h6>Hebilla con rodillo cr 38 mm reforzado 2 hebijones</h6>    
-                                                    </div>
-                                                      <div class="contentss">
-                                                        <a href="eliminarTambien.html">
-                                                        <button >Ver Detalles</button>
-                                                        </a> 
-                                                      </div>
-                                           <div class="empty">
-                                           </div>                   
-                                       </div>           
-                                 </div>           
-                             </section>          
-                         </section>
-                          <section id="item" class="col-md-3 text-center">
-                             <section id="blogss">
-                                 <div class="contenedors">
-                                      <div class="containerTarg">
-                                          <div class="target">   
-                                                    </div>
-                                                    <div class="image">
-                                                      <img src="img/objetivo.jpg" class="img-fluid" >
-                                                    </div>
-                                                    <div class="contents">
-                                                       <h6>Hebilla con rodillo cr 38 mm reforzado 2 hebijones</h6>    
-                                                    </div>
-                                                      <div class="contentss">
-                                                        <a href="eliminarTambien.html">
-                                                        <button >Ver Detalles</button>
-                                                        </a> 
-                                                      </div>
-                                           <div class="empty">
-                                           </div>                   
-                                       </div>           
-                                 </div>           
-                             </section>          
-                         </section> 
-                            <section id="item" class="col-md-3 text-center">
-                             <section id="blogss">
-                                 <div class="contenedors">
-                                      <div class="containerTarg">
-                                          <div class="target">   
-                                                    </div>
-                                                    <div class="image">
-                                                      <img src="img/objetivo.jpg" class="img-fluid" >
-                                                    </div>
-                                                    <div class="contents">
-                                                       <h6>Hebilla con rodillo cr 38 mm reforzado 2 hebijones</h6>    
-                                                    </div>
-                                                      <div class="contentss">
-                                                        <a href="eliminarTambien.html">
-                                                        <button >Ver Detalles</button>
-                                                        </a> 
-                                                      </div>
-                                           <div class="empty">
-                                           </div>                   
-                                       </div>           
-                                 </div>           
-                             </section>          
-                         </section>        
-                       </div>          
-                  </div>  
-                  <br>
-             
-
-         <footer class="bg-secondary text-black pt-5 pb-4">
- 
-  <div class="container text-center text-md-left">
-
-    <div class="row text-center text-md-left">
-
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold text-dark">Empresa</h6>
-          <p>
-        <a  class="text-white" style="text-decoration: none;"> Herrajes Andrea</a>
-      </p>
-        
-      </div>
-
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold text-dark">Informaciòn</h6>
-      <p>
-        <a href="SobreNosotros.php" class="text-white" style="text-decoration: none;"> Sobre nosotros</a>
-      </p>
-      <p>
-        <a href="maps.php" class="text-white" style="text-decoration: none;"> Sucursales</a>
-      </p>
-      </div>
-
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold text-dark" >Atenciòn a clientes</h6>
-        <p>
-           <a class="navbar-brand" href="#">
-          <img src="img/what.png" alt="" width="17" height="17" class="d-inline-block align-text-top">
-      <font size=2 class="d-inline-block align-text-top" color="white">55-18-18-90-61</font>
-         
-         </a>
-        </p>
-         <p>
-           <a class="navbar-brand" href="#">
-          <img src="img/tel.png" alt="" width="17" height="17" class="d-inline-block align-text-top">
-      <font size=2 class="d-inline-block align-text-top" color="white">55-18-18-90-61</font>
-         
-         </a>
-        </p>
-      </div>
-      
+</script>
+  </head>
+  <!-- stop stop stop stop stop stop -->
+  <body>
+    <div class="container">
+      <div class="row justify-content-center pt-5 mt-5 mr-1">
+        <div class="col-md-4 Miformulario">
+          <form action="">
+            <div class="form-group text-center pt-3">
+              <h3 class="text-light">INICIAR SESIÒN</h3>  
+            </div>
+            <div class="form-group mx-sm-8 pt-4">
+              <input type="text" class="form-control" id="texto" placeholder="Ingresa el usuario">           
+            </div> 
+            <div class="input-group pt-4">
+                <input ID="txtPassword" type="Password"  Class="form-control"  placeholder="Ingresa la contraseña">
+                <div class="input-group-append">
+            <button id="show_password" class="btn btn-dark"  type="button" onclick="mostrarPassword()"> <span  class="fas fa-eye-slash icon"></span> </button>
+          </div>
+              </div>
+               
+              <div class="form-group mx-sm-8 pt-5">
+                <a href="principal.html"><input  class="btn btn-block ingresa"  value="Ingresar"></a>
+                <!-- <a href="index.html"><input type="submit" class="btn btn-block ingresa"  value="Ingresar"></a>-->       
+            </div>
+          </form>        
+        </div>        
+      </div>     
     </div>
-
-    <hr class="mb-4">
-
-    <div class="row align-items-center">
-
-      <div class="col-md-7 col-lg-8">
-        <p> Copyright ©2021 Todos los derechos reservados por:
-          <a  style="text-decoration: none;">
-            <strong class="text-dark">HERRAJES ANDREA</strong>
-          </a></p>
-        
-      </div>
-
-      <div class="col-md-5 col-lg-4">
-        <div class="text-center text-md-right">
-
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
-            </li>
-          </ul>
-          
-        </div>
-        
-      </div>
-      
-    </div>
-
-  </div>
-</footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
-      </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
